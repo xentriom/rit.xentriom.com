@@ -27,7 +27,7 @@ export function AppSidebar() {
             >
               <div className="flex aspect-square size-8 items-center justify-center rounded-lg">
                 <Image
-                  src="/globe.svg"
+                  src="/logo/rit.png"
                   alt="Logo"
                   width={32}
                   height={32}
@@ -36,10 +36,8 @@ export function AppSidebar() {
               </div>
 
               <div className="grid flex-1 text-left text-sm leading-tight">
-                <span className="truncate font-semibold">MyCourses</span>
-                <span className="truncate text-xs">
-                  Rochester Insititute of Technology
-                </span>
+                <span className="truncate font-semibold">RIT MyCourses</span>
+                <span className="truncate text-xs">Student Account</span>
               </div>
             </SidebarMenuButton>
           </SidebarMenuItem>
