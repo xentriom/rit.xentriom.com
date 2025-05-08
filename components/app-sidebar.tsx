@@ -1,7 +1,6 @@
-import { SunIcon } from "lucide-react";
-
-import { NavMain } from "@/components/nav-main";
-import { NavUser } from "@/components/nav-user";
+import Image from "next/image";
+import Link from "next/link";
+import { SunIcon, SquareArrowOutUpRight } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -13,8 +12,8 @@ import {
   SidebarMenuItem,
   SidebarGroup,
 } from "@/components/ui/sidebar";
-import Image from "next/image";
-import Link from "next/link";
+import { NavMain } from "@/components/nav-main";
+import { NavUser } from "@/components/nav-user";
 
 export function AppSidebar() {
   return (
@@ -51,10 +50,16 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarMenu>
             <SidebarMenuItem>
-              <SidebarMenuButton asChild>
+              <SidebarMenuButton tooltip="Overview" asChild>
                 <Link href="/">
                   <SunIcon />
                   <span>Overview</span>
+                </Link>
+              </SidebarMenuButton>
+              <SidebarMenuButton tooltip="GitHub" asChild>
+                <Link href="/">
+                  <SquareArrowOutUpRight />
+                  <span>GitHub</span>
                 </Link>
               </SidebarMenuButton>
             </SidebarMenuItem>

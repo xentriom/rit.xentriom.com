@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+import Link from "next/link";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -7,10 +9,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { ModeToggle } from "@/components/mode-toggle";
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
-import { Fragment } from "react";
+import { ModeToggle } from "@/components/mode-toggle";
 
 export function Header({
   page,
@@ -46,7 +46,7 @@ export function Header({
           </Breadcrumb>
         </div>
 
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </div>
     </header>
   );
