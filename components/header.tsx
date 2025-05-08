@@ -1,5 +1,7 @@
+"use client";
 import { Fragment } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,7 +12,10 @@ import {
 } from "@/components/ui/breadcrumb";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
-import { ModeToggle } from "@/components/mode-toggle";
+
+const ModeToggle = dynamic(() => import("@/components/mode-toggle"), {
+  ssr: false,
+});
 
 export function Header({
   page,
@@ -46,7 +51,7 @@ export function Header({
           </Breadcrumb>
         </div>
 
-        {/* <ModeToggle /> */}
+        <ModeToggle />
       </div>
     </header>
   );

@@ -29,3 +29,5 @@ export function ModeToggle() {
     </Tabs>
   );
 }
+
+export default ModeToggle;
